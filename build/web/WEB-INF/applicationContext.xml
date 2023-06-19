@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.0.M1.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+          http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.0.0.M1.xsd
+          http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.0.M1.xsd
+">
+   <!--  <context:component-scan base-package="com.catmas.dao, com.catmas.service, com.catmas.view"/>
+                       Site                -->
+    <!--bean id="siteBean" class="com.catmas.view.site.SiteView" >
+        <property name="siteService" ref="siteService" />
+    </bean>
+
+    <bean id="siteService" class="com.catmas.service.impl.SiteServiceImpl" >
+        <property name="siteDao" ref="siteDao"/>
+    </bean>
+
+    <bean id="siteDao" class="com.catmas.dao.impl.SiteDaoImpl" >
+    </bean-->
+
+    <!--                     Crop               -->
+    <!--bean id="cropBean" class="com.catmas.view.crop.CropView" >
+        <property name="cropService" ref="cropService" />
+        <property name="siteService" ref="siteService" />
+    </bean>
+
+    <bean id="cropService" class="com.catmas.service.impl.CropServiceImpl" >
+        <property name="cropDao" ref="cropDao"/>
+        <property name="siteDao" ref="siteDao"/>
+    </bean>
+
+    <bean id="cropDao" class="com.catmas.dao.impl.CropDaoImpl" >
+    </bean-->
+
+    <!--                     Household               -->
+    <!--bean id="houseHoldBean" class="com.catmas.view.household.HouseHoldView" >
+        <property name="houseHoldService" ref="houseHoldService" />
+        <property name="cropService" ref="cropService" />
+        <property name="siteService" ref="siteService" />
+
+
+    </bean>
+
+    <bean id="houseHoldService" class="com.catmas.service.impl.HouseHoldServiceImpl" >
+        <property name="houseHoldDao" ref="householddao"/>
+        <property name="cropDao" ref="cropDao"/>
+        <property name="siteDao" ref="siteDao"/>
+
+
+    </bean>
+
+    <bean id="householddao" class="com.catmas.dao.impl.HouseHoldDaoImpl" >
+    </bean-->
+
+    <!--                     Herd               -->
+    <!--bean id="herdBean" class="com.catmas.view.herd.HerdView" >
+        <property name="herdService" ref="herdService" />
+        <property name="siteService" ref="siteService" />
+    </bean>
+
+    <bean id="herdService" class="com.catmas.service.impl.HerdServiceImpl" >
+        <property name="herdDao" ref="herdDao"/>
+    </bean>
+
+    <bean id="herdDao" class="com.catmas.dao.impl.HerdDaoImpl" >
+    </bean-->
+
+    <!--                     BioPhysique               -->
+    <!--bean id="bioPhysiqueBean" class="com.catmas.view.bio.BioPhysiqueView" >
+        <property name="bioPhysiqueService" ref="bioService" />
+        <property name="siteService" ref="siteService" />
+    </bean>
+
+    <bean id="bioService" class="com.catmas.service.impl.BioPhysiqueServiceImpl" >
+        <property name="bioPhysiqueDao" ref="bioDao"/>
+
+    </bean>
+
+    <bean id="bioDao" class="com.catmas.dao.impl.BioPhysiqueDaoImpl" >
+    </bean-->
+
+    <!--                    administration                -->
+    <!--bean id="adminBean" class="com.catmas.view.admin.AdminView" >
+        <property name="adminService" ref="adminService" />
+    </bean>
+
+    <bean id="adminService" class="com.catmas.service.impl.AdminServiceImpl" >
+        <property name="adminDao" ref="adminDao"/>
+    </bean>
+    <bean id="adminDao" class="com.catmas.dao.impl.AdminDaoImpl" >
+    </bean-->
+
+    <!--                    Simulation                -->
+    <!--bean id="simulationBean" class="com.catmas.view.simulation.SimulationView" >
+        <property name="siteService" ref="siteService" />
+        <property name="cropService" ref="cropService" />
+    </bean-->
+   
+</beans>

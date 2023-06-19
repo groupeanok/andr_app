@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="E-COLLECTEPU" transaction-type="RESOURCE_LOCAL">
+<!-- <provider>org.hibernate.ejb.HibernatePersistence</provider>-->
+ <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>    
+    <!--<persistence version="2.1" 
+xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+      <persistence-unit name="E-COLLECTEPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <non-jta-data-source>ecollecte</non-jta-data-source>-->
+    <!-- Attention a la ligne ci dessus, elle empeche de deplayer sur le serveur-->
+    <!--   <exclude-unlisted-classes>true</exclude-unlisted-classes>-->
+    <class>entites.Acteur</class>
+    <class>entites.Actorspecialite</class>
+    <class>entites.Alerte</class>
+    <class>entites.Alerteenv</class>
+    <class>entites.Alertetype</class>
+    <class>entites.Animaltypes</class>
+    <class>entites.Association</class>
+    <class>entites.Bulletins</class>
+    <class>entites.Collecte</class>
+    <class>entites.DaDistrict</class>
+    <class>entites.DaRegion</class>
+    <class>entites.Devise</class>
+    <class>entites.Entreprise</class>
+    <class>entites.Groupe</class>
+    <class>entites.Langue</class>
+    <class>entites.MoyenTrans</class>
+    <class>entites.NatureProduit</class>
+    <class>entites.Offre</class>
+    <class>entites.Offreconclus</class>
+    <class>entites.Operateur</class>
+    <class>entites.OperateurDetail</class>
+    <class>entites.Parametres</class>
+    <class>entites.Partners</class>
+    <class>entites.Pays</class>
+    <class>entites.PointCollecte</class>
+    <class>entites.PosteDouane</class>
+    <class>entites.Produit</class>
+    <class>entites.Specialite</class>
+    <class>entites.TraCheckpoint</class>
+    <class>entites.TraCollecte</class>
+    <class>entites.TraCorridor</class>
+    <class>entites.TraDatatraca</class>
+    <class>entites.TraNiveausco</class>
+    <class>entites.TraStructureCtrle</class>
+    <class>entites.TraTypeProprio</class>
+    <class>entites.TypeAnimal</class>
+    <class>entites.Units</class>
+    <class>entites.ValCollecte</class>
+    <class>entites.ValOffre</class>
+    <class>entites.Ville</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+
+        
+         <property name="hibernate.connection.url" value="jdbc:mysql://hybrid1386.ca.ns.planethoster.net:3306/ecollecte?useSSL=false"/>
+         <!--     
+        <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/ecollecte?useSSL=false"/>--> 
+        <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="hibernate.connection.username" value="konombo"/>
+        <property name="hibernate.connection.password" value="anok_groupe_1974"/>
+        <property name="hibernate.generate_statistics" value="true" />
+        <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform" />            
+                     
+        <property name="hibernate.c3p0.min_size" value="5" />
+        <property name="hibernate.c3p0.max_size" value="20" />
+        <property name="hibernate.c3p0.timeout" value="300" />
+        <property name="hibernate.c3p0.max_statements" value="50" />
+        <property name="hibernate.c3p0.idle_test_period" value="120" />      
+            
+        <property name="initialSize" value="10" />
+        <property name="maxActive" value="15" />
+        <property name="maxWait" value="5000" />
+        <property name="maxIdle" value="1" />
+      
+        <!-- 
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>   
+        <property name="hibernate.cache.use_second_level_cache">false</property>    
+        <property name="hibernate.connection.url">jdbc:mysql://hybrid1386.ca.ns.planethoster.net:3306/ecollecte?rewriteBatchStatements=true?characterEncoding=UTF-8</property>             
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.username">konombo</property>
+        <property name="hibernate.connection.password">anok_groupe_1974</property>  
+        <property name="hibernate.cache.use_second_level_cache">false</property>    
+        <property name="hibernate.enable_lazy_load_no_trans">true</property>
+        <property name="hibernate.connection.testOnBorrow">true</property>
+        <property name="hibernate.connection.validationQuery">SELECT 1</property> 
+        <property name="hibernate.connection.validationInterval">60000</property>  
+        <property name="hibernate.transaction.factory_class ">org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform</property>  
+        -->
+      
+ 
+    </properties>
+  </persistence-unit>
+</persistence>
